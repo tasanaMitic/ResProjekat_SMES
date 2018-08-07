@@ -25,31 +25,46 @@ namespace SHES
     {
         public MainWindow()
         {
+            double potrosnjaPotrosaca = 0;
+            double visakEnergije = 25;
+            int uvozIzElektrodistribucije = 0;
+
             InitializeComponent();
 
-            ChannelFactory<IPotrosac> factory = new ChannelFactory<IPotrosac>(
+            ChannelFactory<IPotrosac> factoryPotrosaca = new ChannelFactory<IPotrosac>(
                                                             new NetTcpBinding(),
                                                             new EndpointAddress("net.tcp://localhost:4000/IPotrosac"));
+            ChannelFactory<IElektrodistribucija> factoryElektrodistribucije = new ChannelFactory<IElektrodistribucija>(
+                                                            new NetTcpBinding(),
+                                                            new EndpointAddress("net.tcp://localhost:5000/IElektrodistribucija"));
 
-            IPotrosac proxyPotrosac = factory.CreateChannel();
-            double potrosnjaPotrosaca = proxyPotrosac.PreuzmiInfoOdPotrosaca();
+            IPotrosac proxyPotrosac = factoryPotrosaca.CreateChannel();
+            IElektrodistribucija proxyElektrodistribucija = factoryElektrodistribucije.CreateChannel();
 
-           /* using (XmlWriter writer = XmlWriter.Create("UPIS.xml"))
+            proxyElektrodistribucija.PosaljiVisakEnergijeElektrodistribuciji(visakEnergije);
+
+            potrosnjaPotrosaca = proxyPotrosac.PreuzmiInfoOdPotrosaca();
+            uvozIzElektrodistribucije = proxyElektrodistribucija.PreuzmiInfoOdElektrodistribucije();
+            
+
+            using (XmlWriter writer = XmlWriter.Create("UPIS.xml"))
             {
                 writer.WriteStartDocument();
                 writer.WriteStartElement("Potrosnja");
 
                 
                     writer.WriteStartElement("potrosnjaPotrosaca");
-
                     writer.WriteElementString("potrosac", potrosnjaPotrosaca.ToString());
-
                     writer.WriteEndElement();
-                
+
+                    writer.WriteStartElement("cenaEnergije");
+                    writer.WriteElementString("elektrodistribucija", uvozIzElektrodistribucije.ToString());
+                    writer.WriteEndElement();
+
 
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
-            }*/
+            }
 
         }
     }
