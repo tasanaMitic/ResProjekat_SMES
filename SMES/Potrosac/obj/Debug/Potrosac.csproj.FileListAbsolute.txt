@@ -1,0 +1,10 @@
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Potrosac.exe.config
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Potrosac.exe
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Potrosac.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Common.dll
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Common.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.exe
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.pdb

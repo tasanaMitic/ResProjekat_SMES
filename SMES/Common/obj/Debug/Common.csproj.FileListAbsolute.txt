@@ -1,0 +1,6 @@
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\bin\Debug\Common.dll
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\bin\Debug\Common.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\obj\Debug\Common.dll
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\obj\Debug\Common.pdb

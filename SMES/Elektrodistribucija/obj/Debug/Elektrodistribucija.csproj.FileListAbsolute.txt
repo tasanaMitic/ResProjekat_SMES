@@ -1,0 +1,6 @@
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Elektrodistribucija.exe.config
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Elektrodistribucija.exe
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Elektrodistribucija.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.exe
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.pdb

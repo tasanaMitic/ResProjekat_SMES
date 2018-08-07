@@ -1,0 +1,7 @@
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\bin\Debug\Baterija.exe.config
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\bin\Debug\Baterija.exe
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\bin\Debug\Baterija.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.exe
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.pdb

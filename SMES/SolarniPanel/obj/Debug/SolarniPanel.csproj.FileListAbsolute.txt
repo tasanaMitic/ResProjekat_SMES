@@ -1,0 +1,7 @@
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\SolarniPanel.exe.config
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\SolarniPanel.exe
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\SolarniPanel.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.exe
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.pdb
