@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potrosac", "Potrosac\Potrosac.csproj", "{8BE7BC4C-7D2B-45E6-BB8F-6680FB7BFED2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarniPanel", "SolarniPanel\SolarniPanel.csproj", "{E42E49D9-2D3B-4377-AF81-F357F8820069}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8BE7BC4C-7D2B-45E6-BB8F-6680FB7BFED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BE7BC4C-7D2B-45E6-BB8F-6680FB7BFED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BE7BC4C-7D2B-45E6-BB8F-6680FB7BFED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E42E49D9-2D3B-4377-AF81-F357F8820069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E42E49D9-2D3B-4377-AF81-F357F8820069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E42E49D9-2D3B-4377-AF81-F357F8820069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E42E49D9-2D3B-4377-AF81-F357F8820069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
