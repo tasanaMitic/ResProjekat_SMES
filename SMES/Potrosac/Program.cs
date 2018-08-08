@@ -17,12 +17,11 @@ namespace Potrosac
                                                             new EndpointAddress("net.tcp://localhost:4000/ISHES"));
 
             ISHES proxy = factory.CreateChannel();
+            Console.WriteLine("Potrosac je pokrenut.");
 
             OsnovnaKlasa potrosac = new OsnovnaKlasa();
             proxy.PreuzmiInfoOdPotrosaca(potrosac.Potrosnja);
-
-
-            Console.WriteLine("Potrosac je pokrenut.");
+                        
             Console.ReadLine();
         }
     }

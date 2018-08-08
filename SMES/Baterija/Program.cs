@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +12,34 @@ namespace Baterija
     {
         static void Main(string[] args)
         {
+            ChannelFactory<ISHES> factory = new ChannelFactory<ISHES>(
+                                                            new NetTcpBinding(),
+                                                            new EndpointAddress("net.tcp://localhost:4000/ISHES"));
+
+
+            ISHES proxy = factory.CreateChannel();
+            Console.WriteLine("Baterija je pokrenuta.");
+
+            OsnovnaKlasa baterija = new OsnovnaKlasa();
+            RezimRadaBaterije rezimRada = new RezimRadaBaterije();
+
+            rezimRada = proxy.PosaljiRezimRadaBateriji();
+
+            switch (rezimRada)
+            {
+                case RezimRadaBaterije.PUNJENJE:
+                    baterija.Kapacitet++;       //izmeniti da se kapacitet povecava za jedan u odnosu na vreme
+                    break;
+                case RezimRadaBaterije.PRAZNJENJE:
+                    baterija.Kapacitet--;
+                    break;
+                case RezimRadaBaterije.NEAKTIVNO:
+                    break;
+                default:
+                    break;
+            }       
+
+            proxy.PreuzmiInfoOdBaterije(baterija.Kapacitet, rezimRada, baterija.MaksimalnaSnaga);
         }
     }
 }

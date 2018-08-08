@@ -30,9 +30,6 @@ namespace SHES
             ServiceHost host = new ServiceHost(typeof(SHESMetode));
             host.AddServiceEndpoint(typeof(ISHES), new NetTcpBinding(), new Uri("net.tcp://localhost:4000/ISHES"));
             host.Open();
-            Console.WriteLine("Shes je podignut kao server");
-            Console.ReadLine();
-            host.Close();
 
         }
     }

@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace Common
 {
+    public enum RezimRadaBaterije
+    {
+        PUNJENJE, PRAZNJENJE, NEAKTIVNO 
+    }
+
     [ServiceContract]
     public interface ISHES
     {
@@ -18,6 +23,12 @@ namespace Common
 
         [OperationContract]
         void PreuzmiInfoOdPotrosaca(double potrosnjaPotrosaca);
+
+        [OperationContract]
+        void PreuzmiInfoOdBaterije(double kapacitet, RezimRadaBaterije rezimRada, double snagaBaterije);
+
+        [OperationContract]
+        RezimRadaBaterije PosaljiRezimRadaBateriji();
 
     }
 }
