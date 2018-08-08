@@ -28,10 +28,10 @@ namespace Baterija
             switch (rezimRada)
             {
                 case RezimRadaBaterije.PUNJENJE:
-                    baterija.Kapacitet++;       //izmeniti da se kapacitet povecava za jedan u odnosu na vreme
+                    baterija.Kapacitet += 1/60;       //izmeniti da se kapacitet povecava za jedan u odnosu na vreme
                     break;
                 case RezimRadaBaterije.PRAZNJENJE:
-                    baterija.Kapacitet--;
+                    baterija.Kapacitet -= 1/60;
                     break;
                 case RezimRadaBaterije.NEAKTIVNO:
                     break;
