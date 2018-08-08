@@ -12,18 +12,20 @@ namespace Elektrodistribucija
     {
         static void Main(string[] args)
         {
-            string adresa = "net.tcp://localhost:5000/IElektrodistribucija";
-            ServiceHost host = new ServiceHost(typeof(MetodeElektrodistribucije));
-            host.AddServiceEndpoint(typeof(IElektrodistribucija),
-                                    new NetTcpBinding(),
-                                    new Uri(adresa));
-            host.Open();
+            ChannelFactory<ISHES> factory = new ChannelFactory<ISHES>(
+                                                            new NetTcpBinding(),
+                                                            new EndpointAddress("net.tcp://localhost:4000/ISHES"));
 
 
-
+            ISHES proxy = factory.CreateChannel();
             Console.WriteLine("Elektrodistribucija je pokrenuta.");
+
+            OsnovnaKlasa elektrodistribucija = new OsnovnaKlasa();
+
+            elektrodistribucija.Energija = proxy.PosaljiVisakEnergijeElektrodistribuciji();
+            proxy.PreuzmiInfoOdElektrodistribucije(elektrodistribucija.Energija * elektrodistribucija.Cena);
+            
             Console.ReadLine();
-            host.Close();
         }
     }
 }

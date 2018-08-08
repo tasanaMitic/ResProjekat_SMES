@@ -12,18 +12,18 @@ namespace Potrosac
     {
         static void Main(string[] args)
         {
-            string adresa = "net.tcp://localhost:4000/IPotrosac";
-            ServiceHost host = new ServiceHost(typeof(MetodaPotrosaca));
-            host.AddServiceEndpoint(typeof(IPotrosac),
-                                    new NetTcpBinding(),
-                                    new Uri(adresa));
-            host.Open();
+            ChannelFactory<ISHES> factory = new ChannelFactory<ISHES>(
+                                                            new NetTcpBinding(),
+                                                            new EndpointAddress("net.tcp://localhost:4000/ISHES"));
 
-            
+            ISHES proxy = factory.CreateChannel();
 
-            Console.WriteLine("Potrosa je pokrenut.");
+            OsnovnaKlasa potrosac = new OsnovnaKlasa();
+            proxy.PreuzmiInfoOdPotrosaca(potrosac.Potrosnja);
+
+
+            Console.WriteLine("Potrosac je pokrenut.");
             Console.ReadLine();
-            host.Close();
         }
     }
 }

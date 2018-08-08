@@ -8,12 +8,16 @@ using System.Threading.Tasks;
 namespace Common
 {
     [ServiceContract]
-    public interface IElektrodistribucija
+    public interface ISHES
     {
         [OperationContract]
-        void PosaljiVisakEnergijeElektrodistribuciji(double visakEnergije);
+        double PosaljiVisakEnergijeElektrodistribuciji();
 
         [OperationContract]
-        int PreuzmiInfoOdElektrodistribucije();
+        void PreuzmiInfoOdElektrodistribucije(double uvozElektrodistribucije);
+
+        [OperationContract]
+        void PreuzmiInfoOdPotrosaca(double potrosnjaPotrosaca);
+
     }
 }
