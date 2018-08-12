@@ -4,8 +4,3 @@ C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\obj\Debug\Com
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\obj\Debug\Common.dll
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Common\obj\Debug\Common.pdb
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Common\bin\Debug\Common.dll
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Common\bin\Debug\Common.pdb
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Common\obj\Debug\Common.dll
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Common\obj\Debug\Common.pdb

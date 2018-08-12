@@ -1,4 +1,5 @@
 ﻿using Common;
+using SHES.Serveri;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,28 +25,29 @@ namespace SHES
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static Sat Sat = new Sat();
+        public static SHESInfo Info = new SHESInfo();
         public MainWindow()
         {
             InitializeComponent();
-            
-            ServiceHost host = new ServiceHost(typeof(SHESMetode));
-            host.AddServiceEndpoint(typeof(ISHES), new NetTcpBinding(), new Uri("net.tcp://localhost:4000/ISHES"));
-            host.Open();
 
+            PotrosacServer potrosacServer = new PotrosacServer();
+            potrosacServer.Open();
 
-            Sat s = new Sat();
-            Binding satBin = new Binding();
-            satBin.Source = s;
-            satBin.Path = new PropertyPath("Sati");
-            satBin.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
-            Binding minBin = new Binding();
-            minBin.Source = s;
-            minBin.Path = new PropertyPath("Minuta");
-            minBin.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
-            BindingOperations.SetBinding(Sati, TextBlock.TextProperty, satBin);
-            BindingOperations.SetBinding(Minuta, TextBlock.TextProperty, minBin);
-            s.PokreniSat();
+            BindPropertyToUIElement(Sat, Sati, TextBlock.TextProperty, "Sati");
+            BindPropertyToUIElement(Sat, Minuta, TextBlock.TextProperty, "Minuta");
+            BindPropertyToUIElement(Info, Potrosnja, TextBlock.TextProperty, "PotrosnjaPotrosaca");
+            Sat.PokreniSat();
 
+        }
+
+        private void BindPropertyToUIElement(Object source, DependencyObject target, DependencyProperty dp, String nameOfProperty)
+        {
+            Binding binding = new Binding();
+            binding.Source = source;
+            binding.Path = new PropertyPath(nameOfProperty);
+            binding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
+            BindingOperations.SetBinding(target, dp, binding);
         }
     }
 }

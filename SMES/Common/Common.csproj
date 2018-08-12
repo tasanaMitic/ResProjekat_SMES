@@ -41,7 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISHES.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Interfaces\IBaterija.cs" />
+    <Compile Include="Interfaces\IElektroDistribucija.cs" />
+    <Compile Include="Interfaces\IPanel.cs" />
+    <Compile Include="Interfaces\IPotrosac.cs" />
+    <Compile Include="Interfaces\IPunjac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -30,11 +30,13 @@ namespace SHES
 
         public void OnPropertyChanged (string parameter)
         {
+            
             PropertyChangedEventHandler ph = PropertyChanged;
             if (ph != null)
             {
                 ph(this, new PropertyChangedEventArgs(parameter));
             }
+            
         }
         public async void PokreniSat()
         {

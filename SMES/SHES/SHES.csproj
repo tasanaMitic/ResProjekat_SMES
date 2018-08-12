@@ -56,7 +56,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Sat.cs" />
-    <Compile Include="SHESMetode.cs" />
+    <Compile Include="Serveri\PotrosacServer.cs" />
+    <Compile Include="Servisi\BaterijaServis.cs" />
+    <Compile Include="Servisi\ElektroDistribucijaServis.cs" />
+    <Compile Include="Servisi\PanelServis.cs" />
+    <Compile Include="Servisi\PotrosacServis.cs" />
+    <Compile Include="SHESInfo.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

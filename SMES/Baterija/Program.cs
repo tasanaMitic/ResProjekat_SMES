@@ -12,18 +12,13 @@ namespace Baterija
     {
         static void Main(string[] args)
         {
-            ChannelFactory<ISHES> factory = new ChannelFactory<ISHES>(
-                                                            new NetTcpBinding(),
-                                                            new EndpointAddress("net.tcp://localhost:4000/ISHES"));
-
-
-            ISHES proxy = factory.CreateChannel();
+           
             Console.WriteLine("Baterija je pokrenuta.");
 
             OsnovnaKlasa baterija = new OsnovnaKlasa();
             RezimRadaBaterije rezimRada = new RezimRadaBaterije();
 
-            rezimRada = proxy.PosaljiRezimRadaBateriji();
+            
 
             switch (rezimRada)
             {
@@ -39,7 +34,7 @@ namespace Baterija
                     break;
             }       
 
-            proxy.PreuzmiInfoOdBaterije(baterija.Kapacitet, rezimRada, baterija.MaksimalnaSnaga);
+           
         }
     }
 }
