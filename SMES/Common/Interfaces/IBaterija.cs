@@ -11,6 +11,10 @@ namespace Common.Interfaces
     public interface IBaterija
     {
         [OperationContract]
-        RezimRadaBaterije PosaljiInfoSHESu(double kapacitet, RezimRadaBaterije rezimRada, double snagaBaterije);
+        void PosaljiInfoSHESu(double kapacitet, RezimRadaBaterije rezimRada, double snagaBaterije);
+
+        [OperationContract]
+        RezimRadaBaterije PreuzmiRezimRada();
+
     }
 }

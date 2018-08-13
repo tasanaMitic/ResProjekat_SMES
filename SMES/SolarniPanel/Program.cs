@@ -14,6 +14,7 @@ namespace SolarniPanel
         private static IPanel _proxy;
         private static OsnovnaKlasa panel = new OsnovnaKlasa();
         private static Object _lockObject = new object();
+        private static double jacinaSunca = 0;
         static void Main(string[] args)
         {
             Console.WriteLine($"Maksimalna snaga solarnog panela je: {panel.MaksimalnaSnaga}W.");
@@ -33,7 +34,15 @@ namespace SolarniPanel
                 if(key == "P")
                 {
                     Console.WriteLine("Unesite zeljenu jacinu suncevog zracenja:");
-                    panel.JacinaSunca = Convert.ToDouble(Console.ReadLine());
+                    jacinaSunca = Convert.ToDouble(Console.ReadLine());
+                    if (jacinaSunca > 0 && jacinaSunca < 100)
+                    {
+                        panel.JacinaSunca = jacinaSunca;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Jacina sunca moze da bude u rasponu 0-100.");
+                    }
                 }
                 else if(key == "E")
                 {

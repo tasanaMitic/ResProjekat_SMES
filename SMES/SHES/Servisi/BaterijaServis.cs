@@ -10,20 +10,36 @@ namespace SHES.Servisi
 {
     public class BaterijaServis : IBaterija
     {
-        public RezimRadaBaterije PosaljiInfoSHESu(double kapacitet, RezimRadaBaterije rezimRada, double snagaBaterije)
+        public RezimRadaBaterije PreuzmiRezimRada()
+        {
+            if (MainWindow.Sat.Sati == 3 || MainWindow.Sat.Sati == 4 || MainWindow.Sat.Sati == 5)
+            {
+                return RezimRadaBaterije.PUNJENJE;
+            }
+            else if (MainWindow.Sat.Sati == 14 || MainWindow.Sat.Sati == 15 || MainWindow.Sat.Sati == 16)
+            {
+                return RezimRadaBaterije.PRAZNJENJE;
+            }
+            else
+            {
+                return RezimRadaBaterije.NEAKTIVNO;
+            }
+        }
+
+        public void PosaljiInfoSHESu(double kapacitet, RezimRadaBaterije rezimRada, double snagaBaterije)
         {
             switch (rezimRada)
             {
                 case RezimRadaBaterije.PUNJENJE:
-                    MainWindow.Info.PotrosnjaPotrosaca -= kapacitet * snagaBaterije;
-                    return RezimRadaBaterije.PUNJENJE; //za sada ovako, inace ce ovo zavisiti od sata
+                    MainWindow.Info.EnergijaBaterije -= kapacitet * snagaBaterije;
+                    break;
                 case RezimRadaBaterije.PRAZNJENJE:
-                    MainWindow.Info.PotrosnjaPotrosaca += kapacitet * snagaBaterije;
-                    return RezimRadaBaterije.PRAZNJENJE;
+                    MainWindow.Info.EnergijaBaterije += kapacitet * snagaBaterije;
+                    break;
                 case RezimRadaBaterije.NEAKTIVNO:
-                    return RezimRadaBaterije.NEAKTIVNO;
+                    break;
                 default:
-                    return RezimRadaBaterije.NEAKTIVNO;
+                    break;
             }
         }
     }

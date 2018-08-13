@@ -13,6 +13,7 @@ namespace SHES
         private double _uvozElektrodistribucije; //cena energije
         private double _potrosnjaPotrosaca;
         private double _snagaPanela;
+        private double _energijaBaterije;
 
 
         public double VisakEnergije
@@ -37,6 +38,12 @@ namespace SHES
             set { _snagaPanela = value; OnPropertyChanged("SnagaPanela"); }
         }
 
+        public double EnergijaBaterije
+        {
+            get { return _energijaBaterije; }
+            set { _energijaBaterije = value; OnPropertyChanged("EnergijaBaterije"); }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(string parameter)
         {
@@ -52,7 +59,7 @@ namespace SHES
         public SHESInfo()
         {
             //TODO nakon baterije
-            //VisakEnergije = SnagaPanela - PotrosnjaPotrosaca;
+            VisakEnergije = SnagaPanela - PotrosnjaPotrosaca + EnergijaBaterije;
         }
     }
 }

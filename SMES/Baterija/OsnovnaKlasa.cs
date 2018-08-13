@@ -25,10 +25,10 @@ namespace Baterija
             switch (rezimRada)
             {
                 case RezimRadaBaterije.PUNJENJE:
-                    Kapacitet += 1 / 60;       //izmeniti da se kapacitet povecava za jedan u odnosu na vreme
+                    Kapacitet += 1/60;       //rezim rada se ucitava svakog minuta, pa se i kapacitet menja svakog minuta
                     break;
                 case RezimRadaBaterije.PRAZNJENJE:
-                    Kapacitet -= 1 / 60;
+                    Kapacitet -= 1/60;
                     break;
                 case RezimRadaBaterije.NEAKTIVNO:
                     break;

@@ -21,7 +21,25 @@ namespace Baterija
 
             ChannelFactory<IBaterija> factory = new ChannelFactory<IBaterija>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4003/IBaterija"));
             _proxy = factory.CreateChannel();
-            
+            Thread t = new Thread(new ThreadStart(MetodaBaterije));
+
+            t.IsBackground = true;
+            t.Start();
+
+            Console.ReadLine();
+        }
+
+        private static void MetodaBaterije()
+        {
+            while(true)
+            {
+                rezimRada =  _proxy.PreuzmiRezimRada();
+                Console.WriteLine($"Rezim rada baterije je: {rezimRada}");
+                baterija.PromeniKapacitet(rezimRada);
+                _proxy.PosaljiInfoSHESu(baterija.Kapacitet, rezimRada, baterija.MaksimalnaSnaga);
+
+                Thread.Sleep(1000);
+            }
         }
     }
 }

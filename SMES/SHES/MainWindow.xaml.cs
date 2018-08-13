@@ -34,9 +34,11 @@ namespace SHES
             PotrosacServer potrosacServer = new PotrosacServer();
             PanelServer panelServer = new PanelServer();
             ElektrodistribucijaServer elektrodistribucijaServer = new ElektrodistribucijaServer();
+            BaterijaServer baterijaServer = new BaterijaServer();
             potrosacServer.Open();
             panelServer.Open();
             elektrodistribucijaServer.Open();
+            baterijaServer.Open();
 
             BindPropertyToUIElement(Sat, Sati, TextBlock.TextProperty, "Sati");
             BindPropertyToUIElement(Sat, Minuta, TextBlock.TextProperty, "Minuta");

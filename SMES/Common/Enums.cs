@@ -8,6 +8,6 @@ namespace Common
 {  
     public enum RezimRadaBaterije
     {
-        PUNJENJE, PRAZNJENJE, NEAKTIVNO
+        NEAKTIVNO, PRAZNJENJE, PUNJENJE
     }
 }
