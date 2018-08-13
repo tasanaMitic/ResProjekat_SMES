@@ -5,3 +5,6 @@ C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Deb
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.exe
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\Common.dll
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\Common.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.csproj.CopyComplete

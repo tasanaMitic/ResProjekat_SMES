@@ -12,6 +12,7 @@ namespace SHES
         private double _visakEnergije;
         private double _uvozElektrodistribucije;
         private double _potrosnjaPotrosaca;
+        private double _snagaPanela;
 
 
         public double VisakEnergije
@@ -28,6 +29,12 @@ namespace SHES
         {
             get { return _potrosnjaPotrosaca; }
             set { _potrosnjaPotrosaca = value; OnPropertyChanged("PotrosnjaPotrosaca"); }
+        }
+
+        public double SnagaPanela
+        {
+            get { return _snagaPanela; }
+            set { _snagaPanela = value; OnPropertyChanged("SnagaPanela"); }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

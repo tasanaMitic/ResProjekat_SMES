@@ -32,11 +32,14 @@ namespace SHES
             InitializeComponent();
 
             PotrosacServer potrosacServer = new PotrosacServer();
+            PanelServer panelServer = new PanelServer();
             potrosacServer.Open();
+            panelServer.Open();
 
             BindPropertyToUIElement(Sat, Sati, TextBlock.TextProperty, "Sati");
             BindPropertyToUIElement(Sat, Minuta, TextBlock.TextProperty, "Minuta");
             BindPropertyToUIElement(Info, Potrosnja, TextBlock.TextProperty, "PotrosnjaPotrosaca");
+            BindPropertyToUIElement(Info, Snaga, TextBlock.TextProperty, "SnagaPanela");
             Sat.PokreniSat();
 
         }

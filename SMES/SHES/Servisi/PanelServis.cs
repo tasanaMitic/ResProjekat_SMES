@@ -11,7 +11,7 @@ namespace SHES.Servisi
     {
         public void PosaljiEnergiju(double kolicinaEnergije)
         {
-            throw new NotImplementedException();
+            MainWindow.Info.SnagaPanela = kolicinaEnergije;
         }
     }
 }

@@ -4,3 +4,4 @@ C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\bin\Debug\E
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.exe
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.csprojResolveAssemblyReference.cache
