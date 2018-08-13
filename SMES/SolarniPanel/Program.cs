@@ -27,7 +27,7 @@ namespace SolarniPanel
 
             while(true)
             {
-                Console.WriteLine($"Trenutna snaga solarnog panela je: {panel.PreuzmiTrenutnuSnaguPanela()}. Pritisnite P za promenu jacine suncevog zracenja ili E za izlaz iz programa.");
+                Console.WriteLine($"Trenutna snaga solarnog panela je: {panel.PreuzmiTrenutnuSnaguPanela()}W. Pritisnite P za promenu jacine suncevog zracenja ili E za izlaz iz programa.");
 
                 String key = Console.ReadLine();
                 if(key == "P")

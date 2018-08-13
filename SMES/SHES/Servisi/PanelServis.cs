@@ -9,9 +9,9 @@ namespace SHES.Servisi
 {
     public class PanelServis : IPanel
     {
-        public void PosaljiEnergiju(double kolicinaEnergije)
+        public void PosaljiEnergiju(double kolicinaSnage)
         {
-            MainWindow.Info.SnagaPanela = kolicinaEnergije;
+            MainWindow.Info.SnagaPanela = kolicinaSnage;
         }
     }
 }

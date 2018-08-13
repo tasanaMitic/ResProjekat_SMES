@@ -8,16 +8,18 @@ namespace Elektrodistribucija
 {
     public class OsnovnaKlasa
     {
-        private int cena;
-        private double energija;
-
-        public int Cena { get => cena; set => cena = value; }
-        public double Energija { get => energija; set => energija = value; }
+        public double Cena { get; private set; }
+        public double Energija { get; set; }
 
         public OsnovnaKlasa()
         {
             Cena = 100;
             Energija = 0;
+        }
+
+        public double IzracunajCenuEnergije()
+        {
+            return Cena * Energija;
         }
     }
 }

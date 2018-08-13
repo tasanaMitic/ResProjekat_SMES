@@ -26,6 +26,9 @@
         <TextBlock Grid.Row="0" Grid.Column="2" Name="Minuta" FontSize="20" HorizontalAlignment="Left"/>
         <Label Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" >Potrosnja potrosaca:</Label>
         <TextBlock Grid.Row="1" Grid.Column="3" Name="Potrosnja" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-        <TextBlock Grid.Row="1" Grid.Column="4" Name="Snaga" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <Label Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" >Snaga panela:</Label>
+        <TextBlock Grid.Row="2" Grid.Column="3" Name="Snaga" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+        <Label Grid.Row="3" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" >Cena uvoza:</Label>
+        <TextBlock Grid.Row="3" Grid.Column="3" Name="Cena" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
     </Grid>
 </Window>

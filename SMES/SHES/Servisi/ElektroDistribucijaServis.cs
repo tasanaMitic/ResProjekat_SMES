@@ -9,9 +9,15 @@ namespace SHES.Servisi
 {
     public class ElektroDistribucijaServis : IElektroDistribucija
     {
-        public void DobaviVisak(double visakEnergije)
+        SHESInfo SHESInfo = new SHESInfo();
+        public double DobaviVisak()
         {
-            throw new NotImplementedException();
+            return SHESInfo.VisakEnergije;
+        }
+
+        public void PosaljiCenu(double cenaEnergije)
+        {
+            MainWindow.Info.UvozElektrodistribucije = cenaEnergije;
         }
     }
 }

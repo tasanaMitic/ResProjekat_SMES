@@ -9,19 +9,32 @@ namespace Baterija
 {
     public class OsnovnaKlasa
     {
-        private double kapacitet;
-        private double maksimalnaSnaga;
-        private int ime;
-
-        public double Kapacitet { get => kapacitet; set => kapacitet = value; }
-        public double MaksimalnaSnaga { get => maksimalnaSnaga; set => maksimalnaSnaga = value; }
-        public int Ime { get => ime; set => ime = value; }
+        public double Kapacitet { get; private set; }
+        public double MaksimalnaSnaga { get; private set; }
+        public int Ime { get; private set; }
 
         public OsnovnaKlasa()
         {
             Ime = GetHashCode();
             MaksimalnaSnaga = 200;
             Kapacitet = 250;
+        }
+
+        public void PromeniKapacitet(RezimRadaBaterije rezimRada)
+        {
+            switch (rezimRada)
+            {
+                case RezimRadaBaterije.PUNJENJE:
+                    Kapacitet += 1 / 60;       //izmeniti da se kapacitet povecava za jedan u odnosu na vreme
+                    break;
+                case RezimRadaBaterije.PRAZNJENJE:
+                    Kapacitet -= 1 / 60;
+                    break;
+                case RezimRadaBaterije.NEAKTIVNO:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

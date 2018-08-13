@@ -11,6 +11,6 @@ namespace Common.Interfaces
     public interface IPanel
     {
         [OperationContract]
-        void PosaljiEnergiju(double kolicinaEnergije);
+        void PosaljiEnergiju(double kolicinaSnage);
     }
 }

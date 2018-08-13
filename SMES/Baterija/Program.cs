@@ -1,40 +1,27 @@
 ﻿using Common;
+using Common.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Baterija
 {
     class Program
     {
+        private static IBaterija _proxy;
+        private static OsnovnaKlasa baterija = new OsnovnaKlasa();
+        private static RezimRadaBaterije rezimRada = new RezimRadaBaterije();
         static void Main(string[] args)
         {
-           
-            Console.WriteLine("Baterija je pokrenuta.");
+            Console.WriteLine($"Baterija ima kapacitet: {baterija.Kapacitet}h.");
 
-            OsnovnaKlasa baterija = new OsnovnaKlasa();
-            RezimRadaBaterije rezimRada = new RezimRadaBaterije();
-
+            ChannelFactory<IBaterija> factory = new ChannelFactory<IBaterija>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4003/IBaterija"));
+            _proxy = factory.CreateChannel();
             
-
-            switch (rezimRada)
-            {
-                case RezimRadaBaterije.PUNJENJE:
-                    baterija.Kapacitet += 1/60;       //izmeniti da se kapacitet povecava za jedan u odnosu na vreme
-                    break;
-                case RezimRadaBaterije.PRAZNJENJE:
-                    baterija.Kapacitet -= 1/60;
-                    break;
-                case RezimRadaBaterije.NEAKTIVNO:
-                    break;
-                default:
-                    break;
-            }       
-
-           
         }
     }
 }

@@ -17,7 +17,6 @@ namespace Potrosac
         private static Object _lockObject = new object();
         static void Main(string[] args)
         {
-
             Console.WriteLine($"Potrosnja potrosaca je: {potrosac.Potrosnja}kWH.");
 
             ChannelFactory<IPotrosac> factory = new ChannelFactory<IPotrosac>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4000/IPotrosac"));

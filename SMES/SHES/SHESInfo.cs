@@ -10,7 +10,7 @@ namespace SHES
     public class SHESInfo : INotifyPropertyChanged
     {
         private double _visakEnergije;
-        private double _uvozElektrodistribucije;
+        private double _uvozElektrodistribucije; //cena energije
         private double _potrosnjaPotrosaca;
         private double _snagaPanela;
 
@@ -47,6 +47,12 @@ namespace SHES
                 ph(this, new PropertyChangedEventArgs(parameter));
             }
 
+        }
+
+        public SHESInfo()
+        {
+            //TODO nakon baterije
+            //VisakEnergije = SnagaPanela - PotrosnjaPotrosaca;
         }
     }
 }
