@@ -8,3 +8,12 @@ C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\P
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csproj.CopyComplete
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.exe
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.pdb
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Potrosac.exe.config
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Potrosac.exe
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Potrosac.pdb
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Common.dll
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\bin\Debug\Common.pdb
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csproj.CoreCompileInputs.cache
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csproj.CopyComplete
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.exe
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.pdb

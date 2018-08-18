@@ -11,7 +11,8 @@ namespace SHES.Servisi
     {
         public void PosaljiEnergiju(double kolicinaSnage)
         {
-            MainWindow.Info.SnagaPanela = kolicinaSnage;
+            MainWindow.Info.SnagaPanela += kolicinaSnage;
+            MainWindow.Info.VisakEnergije += kolicinaSnage;
         }
     }
 }

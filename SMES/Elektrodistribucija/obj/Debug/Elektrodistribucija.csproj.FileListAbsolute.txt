@@ -8,3 +8,13 @@ C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Common.pdb
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.csprojResolveAssemblyReference.cache
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.csproj.CopyComplete
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Elektrodistribucija.exe.config
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Elektrodistribucija.exe
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Elektrodistribucija.pdb
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Common.dll
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\bin\Debug\Common.pdb
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.csprojAssemblyReference.cache
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.csproj.CoreCompileInputs.cache
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.csproj.CopyComplete
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.exe
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Elektrodistribucija\obj\Debug\Elektrodistribucija.pdb

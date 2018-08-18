@@ -19,6 +19,11 @@ namespace Baterija
         {
             Console.WriteLine($"Baterija ima kapacitet: {baterija.Kapacitet}h.");
 
+            Console.WriteLine("Unesite maksimalnu snagu baterije: ");
+            Double temp;
+            while (!Double.TryParse(Console.ReadLine(), out temp)) ;
+            baterija.MaksimalnaSnaga = temp;
+
             ChannelFactory<IBaterija> factory = new ChannelFactory<IBaterija>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4003/IBaterija"));
             _proxy = factory.CreateChannel();
             Thread t = new Thread(new ThreadStart(MetodaBaterije));

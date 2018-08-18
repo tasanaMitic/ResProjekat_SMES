@@ -12,11 +12,11 @@ namespace SHES.Servisi
     {
         public RezimRadaBaterije PreuzmiRezimRada()
         {
-            if (MainWindow.Sat.Sati == 3 || MainWindow.Sat.Sati == 4 || MainWindow.Sat.Sati == 5)
+            if (MainWindow.Sat.Sati >= 3 && MainWindow.Sat.Sati <= 6)
             {
                 return RezimRadaBaterije.PUNJENJE;
             }
-            else if (MainWindow.Sat.Sati == 14 || MainWindow.Sat.Sati == 15 || MainWindow.Sat.Sati == 16)
+            else if (MainWindow.Sat.Sati > 13 && MainWindow.Sat.Sati < 17)
             {
                 return RezimRadaBaterije.PRAZNJENJE;
             }
@@ -31,11 +31,17 @@ namespace SHES.Servisi
             switch (rezimRada)
             {
                 case RezimRadaBaterije.PUNJENJE:
-                    MainWindow.Info.EnergijaBaterije -= kapacitet * snagaBaterije;
-                    break;
+                    {
+                        MainWindow.Info.VisakEnergije -= kapacitet * snagaBaterije;
+                        MainWindow.Info.EnergijaBaterije -= kapacitet * snagaBaterije;
+                        break;
+                    }
                 case RezimRadaBaterije.PRAZNJENJE:
-                    MainWindow.Info.EnergijaBaterije += kapacitet * snagaBaterije;
-                    break;
+                    {
+                        MainWindow.Info.EnergijaBaterije += kapacitet * snagaBaterije;
+                        MainWindow.Info.VisakEnergije += kapacitet * snagaBaterije;
+                        break;
+                    } 
                 case RezimRadaBaterije.NEAKTIVNO:
                     break;
                 default:

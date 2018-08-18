@@ -17,6 +17,10 @@ namespace SolarniPanel
         private static double jacinaSunca = 0;
         static void Main(string[] args)
         {
+            Console.WriteLine("Unesite maksimalnu snagu solarnog panela: ");
+            double temp;
+            while (!Double.TryParse(Console.ReadLine(), out temp)) ;
+            panel.MaksimalnaSnaga = temp;
             Console.WriteLine($"Maksimalna snaga solarnog panela je: {panel.MaksimalnaSnaga}W.");
 
             ChannelFactory<IPanel> factory = new ChannelFactory<IPanel>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4001/IPanel"));
@@ -58,8 +62,8 @@ namespace SolarniPanel
         {
             while(true)
             {
-                _proxy.PosaljiEnergiju(panel.PreuzmiTrenutnuSnaguPanela()); //simulira se slanje svake sekunde
-                Thread.Sleep(100);
+                _proxy.PosaljiEnergiju(panel.PreuzmiTrenutnuSnaguPanela() / 60); //simulira se slanje svake sekunde
+                Thread.Sleep(1000);
             }
         }
     }

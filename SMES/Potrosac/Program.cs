@@ -22,7 +22,10 @@ namespace Potrosac
             ChannelFactory<IPotrosac> factory = new ChannelFactory<IPotrosac>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4000/IPotrosac"));
             _proxy = factory.CreateChannel();
             Thread t = new Thread(new ThreadStart(MetodaPotrosaca));
-
+            Console.WriteLine("Unesite potrosnju potrosaca: ");
+            double temp;
+            while (!Double.TryParse(Console.ReadLine(), out temp)) ;
+            potrosac.Potrosnja = temp;
             t.IsBackground = true;
             t.Start();
             while (true)

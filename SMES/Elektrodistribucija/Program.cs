@@ -23,8 +23,8 @@ namespace Elektrodistribucija
 
             while (true)
             {
-                elektrodistribucija.Energija = _proxy.DobaviVisak();
-                double cena = elektrodistribucija.IzracunajCenuEnergije();
+                
+                double cena = elektrodistribucija.IzracunajCenuEnergije(_proxy.DobaviVisak());
                 _proxy.PosaljiCenu(cena);
 
                 Thread.Sleep(1000);

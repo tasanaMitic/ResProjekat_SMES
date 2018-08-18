@@ -12,6 +12,7 @@ namespace SHES.Servisi
         public void PosaljiPotrosnju(double potrosnja)
         {
             MainWindow.Info.PotrosnjaPotrosaca += potrosnja;
+            MainWindow.Info.VisakEnergije -= potrosnja;
         }
     }
 }

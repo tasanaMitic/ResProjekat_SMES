@@ -18,7 +18,7 @@ namespace Potrosac
 
             Upaljen = false;
             Ime = GetHashCode();
-            Potrosnja = (double)rnd.Next(0, 50); //kWH       
+                 
         }
 
         public string PreuzmiStanjePotrosaca

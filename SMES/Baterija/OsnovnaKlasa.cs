@@ -10,14 +10,14 @@ namespace Baterija
     public class OsnovnaKlasa
     {
         public double Kapacitet { get; private set; }
-        public double MaksimalnaSnaga { get; private set; }
+        public double MaksimalnaSnaga { get; set; }
         public int Ime { get; private set; }
 
         public OsnovnaKlasa()
         {
             Ime = GetHashCode();
-            MaksimalnaSnaga = 200;
-            Kapacitet = 250;
+            
+            Kapacitet = 20;
         }
 
         public void PromeniKapacitet(RezimRadaBaterije rezimRada)

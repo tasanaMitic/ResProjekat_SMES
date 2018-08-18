@@ -20,14 +20,39 @@ namespace SHES
 
         private int _minuta = 0;
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public int Minuta
         {
             get { return _minuta; }
             private set { _minuta = value; OnPropertyChanged("Minuta"); }
         }
 
+        private int _dan = DateTime.Now.Day;
+
+        public int Dan
+        {
+            get { return _dan; }
+            set { _dan = value; OnPropertyChanged("Dan"); }
+        }
+
+        private int _mesec = DateTime.Now.Month;
+
+        public int Mesec
+        {
+            get { return _mesec; }
+            set { _mesec = value; OnPropertyChanged("Mesec"); }
+        }
+
+        private int _godina = DateTime.Now.Year;
+
+        public int Godina
+        {
+            get { return _godina; }
+            set { _godina = value; OnPropertyChanged("Godina"); }
+        }
+
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged (string parameter)
         {
             
@@ -47,6 +72,24 @@ namespace SHES
                     Minuta = 0;
                     if (Sati == 23)
                     {
+                        if (Dan == 31)
+                        {
+                            Dan = 1;
+                            if (Mesec == 12)
+                            {
+                                Mesec = 1;
+                                Godina++;
+                            }
+                            else
+                            {
+                                Mesec++;
+                            }
+                            
+                        }
+                        else
+                        {
+                            Dan++;
+                        }
                         Sati = 0;
                     }
                     else
@@ -59,7 +102,7 @@ namespace SHES
                     Minuta++;
                 }
 
-                await Task.Delay(1000);
+                await Task.Delay(100);
             }
         }
     }

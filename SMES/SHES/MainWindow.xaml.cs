@@ -45,6 +45,7 @@ namespace SHES
             BindPropertyToUIElement(Info, Potrosnja, TextBlock.TextProperty, "PotrosnjaPotrosaca");
             BindPropertyToUIElement(Info, Snaga, TextBlock.TextProperty, "SnagaPanela");
             BindPropertyToUIElement(Info, Cena, TextBlock.TextProperty, "UvozElektrodistribucije");
+            BindPropertyToUIElement(Info, VisakEnergije, TextBlock.TextProperty, "VisakEnergije");
             Sat.PokreniSat();
 
         }

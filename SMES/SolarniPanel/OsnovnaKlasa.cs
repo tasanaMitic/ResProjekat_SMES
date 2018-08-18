@@ -9,7 +9,7 @@ namespace SolarniPanel
     public class OsnovnaKlasa
     {
         public int Ime { get; private set; }
-        public double MaksimalnaSnaga { get; private set; }
+        public double MaksimalnaSnaga { get; set; }
         public double JacinaSunca { get; set; }
 
         public OsnovnaKlasa()
@@ -17,7 +17,7 @@ namespace SolarniPanel
             Random rnd = new Random();
 
             Ime = GetHashCode();
-            MaksimalnaSnaga = (double)rnd.Next(0, 100); //W
+            
             JacinaSunca = 0;
         }
 
