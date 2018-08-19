@@ -13,11 +13,8 @@ namespace SolarniPanel
         public double JacinaSunca { get; set; }
 
         public OsnovnaKlasa()
-        {
-            Random rnd = new Random();
-
-            Ime = GetHashCode();
-            
+        { 
+            Ime = GetHashCode();            
             JacinaSunca = 0;
         }
 

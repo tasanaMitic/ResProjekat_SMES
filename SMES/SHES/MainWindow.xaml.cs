@@ -35,10 +35,12 @@ namespace SHES
             PanelServer panelServer = new PanelServer();
             ElektrodistribucijaServer elektrodistribucijaServer = new ElektrodistribucijaServer();
             BaterijaServer baterijaServer = new BaterijaServer();
+            EVPunjacServer eVPunjacServer = new EVPunjacServer();
             potrosacServer.Open();
             panelServer.Open();
             elektrodistribucijaServer.Open();
             baterijaServer.Open();
+            eVPunjacServer.Open();
 
             BindPropertyToUIElement(Sat, Sati, TextBlock.TextProperty, "Sati");
             BindPropertyToUIElement(Sat, Minuta, TextBlock.TextProperty, "Minuta");

@@ -14,11 +14,8 @@ namespace Potrosac
 
         public OsnovnaKlasa()
         {
-            Random rnd = new Random();
-
             Upaljen = false;
-            Ime = GetHashCode();
-                 
+            Ime = GetHashCode();                 
         }
 
         public string PreuzmiStanjePotrosaca

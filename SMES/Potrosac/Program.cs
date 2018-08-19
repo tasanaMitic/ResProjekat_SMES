@@ -17,15 +17,15 @@ namespace Potrosac
         private static Object _lockObject = new object();
         static void Main(string[] args)
         {
-            Console.WriteLine($"Potrosnja potrosaca je: {potrosac.Potrosnja}kWH.");
+            Console.WriteLine("Unesite potrosnju potrosaca u kWh: ");
+            double temp;
+            while (!Double.TryParse(Console.ReadLine(), out temp)) ;
+            potrosac.Potrosnja = temp;
 
             ChannelFactory<IPotrosac> factory = new ChannelFactory<IPotrosac>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4000/IPotrosac"));
             _proxy = factory.CreateChannel();
             Thread t = new Thread(new ThreadStart(MetodaPotrosaca));
-            Console.WriteLine("Unesite potrosnju potrosaca: ");
-            double temp;
-            while (!Double.TryParse(Console.ReadLine(), out temp)) ;
-            potrosac.Potrosnja = temp;
+           
             t.IsBackground = true;
             t.Start();
             while (true)
@@ -41,8 +41,7 @@ namespace Potrosac
                 {
                     potrosac.Upaljen = false;
                     break;
-                }
-                
+                }               
 
                 //Console.Clear();
             }
@@ -50,7 +49,7 @@ namespace Potrosac
             Console.ReadLine();
         }
 
-        private static void MetodaPotrosaca ()
+        private static void MetodaPotrosaca()
         {
             while (true)
             {

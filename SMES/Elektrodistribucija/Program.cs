@@ -14,23 +14,34 @@ namespace Elektrodistribucija
     {
         private static IElektroDistribucija _proxy;
         private static OsnovnaKlasa elektrodistribucija = new OsnovnaKlasa();
+        private static Object _lockObject = new object();
         static void Main(string[] args)
         {
-            Console.WriteLine($"Cena energije za 1kWh je: {elektrodistribucija.Cena}din.");
+            Console.WriteLine("Unesite cenu energije za 1kWh: ");
+            Double temp;
+            while (!Double.TryParse(Console.ReadLine(), out temp)) ;
+            elektrodistribucija.Cena = temp;
 
             ChannelFactory<IElektroDistribucija> factory = new ChannelFactory<IElektroDistribucija>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4002/IElektroDistribucija"));
             _proxy = factory.CreateChannel();
+            Thread t = new Thread(new ThreadStart(MetodaElektrodistribucije));
 
+            t.IsBackground = true;
+            t.Start();            
+
+           Console.ReadLine();
+        }
+
+        private static void MetodaElektrodistribucije()
+        {
             while (true)
             {
-                
+
                 double cena = elektrodistribucija.IzracunajCenuEnergije(_proxy.DobaviVisak());
                 _proxy.PosaljiCenu(cena);
 
                 Thread.Sleep(1000);
             }
-
-            //Console.ReadLine();
         }
     }
 }

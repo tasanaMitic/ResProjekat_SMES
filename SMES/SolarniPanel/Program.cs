@@ -14,14 +14,13 @@ namespace SolarniPanel
         private static IPanel _proxy;
         private static OsnovnaKlasa panel = new OsnovnaKlasa();
         private static Object _lockObject = new object();
-        private static double jacinaSunca = 0;
+        private static double tempSunca;
         static void Main(string[] args)
         {
-            Console.WriteLine("Unesite maksimalnu snagu solarnog panela: ");
+            Console.WriteLine("Unesite maksimalnu snagu solarnog panela u W: ");
             double temp;
             while (!Double.TryParse(Console.ReadLine(), out temp)) ;
             panel.MaksimalnaSnaga = temp;
-            Console.WriteLine($"Maksimalna snaga solarnog panela je: {panel.MaksimalnaSnaga}W.");
 
             ChannelFactory<IPanel> factory = new ChannelFactory<IPanel>(new NetTcpBinding(), new EndpointAddress("net.tcp://localhost:4001/IPanel"));
             _proxy = factory.CreateChannel();
@@ -38,10 +37,10 @@ namespace SolarniPanel
                 if(key == "P")
                 {
                     Console.WriteLine("Unesite zeljenu jacinu suncevog zracenja:");
-                    jacinaSunca = Convert.ToDouble(Console.ReadLine());
-                    if (jacinaSunca > 0 && jacinaSunca < 100)
+                    while (!Double.TryParse(Console.ReadLine(), out tempSunca)) ;
+                    if (tempSunca >= 0 && tempSunca <= 100)
                     {
-                        panel.JacinaSunca = jacinaSunca;
+                        panel.JacinaSunca = tempSunca;
                     }
                     else
                     {

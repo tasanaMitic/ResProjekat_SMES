@@ -8,7 +8,7 @@ namespace Elektrodistribucija
 {
     public class OsnovnaKlasa
     {
-        public double Cena { get; private set; }
+        public double Cena { get; set; }
 
         public OsnovnaKlasa()
         {

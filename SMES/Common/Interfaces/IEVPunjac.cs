@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 namespace Common.Interfaces
 {
     [ServiceContract]
-    public interface IPunjac
+    public interface IEVPunjac
     {
-        //TODO
+        [OperationContract]
+        void PreuzmiEnergiju();
+
+        [OperationContract]
+        RezimRadaBaterije PreuzmiRezimRadaBaterije();
     }
 }

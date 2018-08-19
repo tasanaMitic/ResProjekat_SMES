@@ -5,3 +5,6 @@ C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\E
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.exe
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.pdb
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\bin\Debug\Common.dll
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\bin\Debug\Common.pdb
+C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.csproj.CopyComplete

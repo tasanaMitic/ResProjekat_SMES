@@ -14,6 +14,7 @@ namespace SHES
         private double _potrosnjaPotrosaca;
         private double _snagaPanela;
         private double _energijaBaterije;
+        private double _maxSnagaBaterije;
 
 
         public double VisakEnergije
@@ -44,6 +45,12 @@ namespace SHES
             set { _energijaBaterije = value; OnPropertyChanged("EnergijaBaterije"); }
         }
 
+        public double MaxSnagaBaterije
+        {
+            get { return _maxSnagaBaterije; }
+            set { _maxSnagaBaterije = value; OnPropertyChanged("MaxSnagaBaterije"); }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(string parameter)
         {
@@ -58,8 +65,6 @@ namespace SHES
 
         public SHESInfo()
         {
-            //TODO nakon baterije
-            VisakEnergije = SnagaPanela - PotrosnjaPotrosaca + EnergijaBaterije;
         }
     }
 }
