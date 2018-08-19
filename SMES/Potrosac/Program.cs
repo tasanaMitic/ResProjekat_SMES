@@ -14,7 +14,6 @@ namespace Potrosac
     {
         private static IPotrosac _proxy;
         private static OsnovnaKlasa potrosac = new OsnovnaKlasa();
-        private static Object _lockObject = new object();
         static void Main(string[] args)
         {
             Console.WriteLine("Unesite potrosnju potrosaca u kWh: ");

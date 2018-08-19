@@ -14,7 +14,6 @@ namespace Elektrodistribucija
     {
         private static IElektroDistribucija _proxy;
         private static OsnovnaKlasa elektrodistribucija = new OsnovnaKlasa();
-        private static Object _lockObject = new object();
         static void Main(string[] args)
         {
             Console.WriteLine("Unesite cenu energije za 1kWh: ");

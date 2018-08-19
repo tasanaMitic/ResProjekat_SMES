@@ -87,7 +87,7 @@ namespace SHES
                             
                         }
                         else
-                        {
+                        { 
                             Dan++;
                         }
                         Sati = 0;

@@ -13,7 +13,6 @@ namespace SolarniPanel
     {
         private static IPanel _proxy;
         private static OsnovnaKlasa panel = new OsnovnaKlasa();
-        private static Object _lockObject = new object();
         private static double tempSunca;
         static void Main(string[] args)
         {
