@@ -54,7 +54,6 @@ namespace EVPunjac
                 Console.WriteLine("Pritisnite D ako zelite punjenje automobila ili N ako ne zelite.");
                 key1 = Console.ReadLine();
             }
-            Console.ReadLine();
         }
 
         private static void MetodaPunjaca()

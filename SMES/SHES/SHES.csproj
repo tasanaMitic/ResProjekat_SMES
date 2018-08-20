@@ -67,6 +67,7 @@
     <Compile Include="Servisi\PanelServis.cs" />
     <Compile Include="Servisi\PotrosacServis.cs" />
     <Compile Include="SHESInfo.cs" />
+    <Compile Include="XMLWorker.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

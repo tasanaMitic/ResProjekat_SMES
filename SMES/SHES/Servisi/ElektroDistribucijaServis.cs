@@ -11,12 +11,14 @@ namespace SHES.Servisi
     {
         public double DobaviVisak()
         {
-            return MainWindow.Info.VisakEnergije;
+            double visak = MainWindow.Info.VisakEnergije;
+            MainWindow.Info.VisakEnergije -= visak;
+            return visak;
         }
 
         public void PosaljiCenu(double cenaEnergije)
         {
-            MainWindow.Info.UvozElektrodistribucije = cenaEnergije;
+            MainWindow.Info.UvozElektrodistribucije += cenaEnergije;
         }
     }
 }

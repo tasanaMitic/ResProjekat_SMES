@@ -2,6 +2,7 @@
 using SHES.Serveri;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
@@ -20,11 +21,13 @@ using System.Xml;
 
 namespace SHES
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static BackgroundWorker backgroundWorker; //ovo ce trebati za tred koji unosi u xml
         public static Sat Sat = new Sat();
         public static SHESInfo Info = new SHESInfo();
         public MainWindow()
@@ -42,12 +45,15 @@ namespace SHES
             baterijaServer.Open();
             eVPunjacServer.Open();
 
+            
+
             BindPropertyToUIElement(Sat, Sati, TextBlock.TextProperty, "Sati");
             BindPropertyToUIElement(Sat, Minuta, TextBlock.TextProperty, "Minuta");
-            BindPropertyToUIElement(Info, Potrosnja, TextBlock.TextProperty, "PotrosnjaPotrosaca");
-            BindPropertyToUIElement(Info, Snaga, TextBlock.TextProperty, "SnagaPanela");
-            BindPropertyToUIElement(Info, Cena, TextBlock.TextProperty, "UvozElektrodistribucije");
-            BindPropertyToUIElement(Info, VisakEnergije, TextBlock.TextProperty, "VisakEnergije");
+            //BindPropertyToUIElement(Info, Potrosnja, TextBlock.TextProperty, "PotrosnjaPotrosaca");
+            //BindPropertyToUIElement(Info, Snaga, TextBlock.TextProperty, "SnagaPanela");
+            //BindPropertyToUIElement(Info, Cena, TextBlock.TextProperty, "UvozElektrodistribucije");
+            //BindPropertyToUIElement(Info, VisakEnergije, TextBlock.TextProperty, "VisakEnergije");
+            
             Sat.PokreniSat();
             
         }
@@ -60,5 +66,6 @@ namespace SHES
             binding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
             BindingOperations.SetBinding(target, dp, binding);
         }
+
     }
 }
