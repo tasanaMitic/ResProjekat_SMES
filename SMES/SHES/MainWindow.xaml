@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SHES"
+        xmlns:charting="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -24,13 +25,18 @@
         <TextBlock Grid.Row="0" Grid.Column="0" Name="Sati" FontSize="20" HorizontalAlignment="Right"/>
         <TextBlock Grid.Row="0" Grid.Column="1" FontSize="20">:</TextBlock>
         <TextBlock Grid.Row="0" Grid.Column="2" Name="Minuta" FontSize="20" HorizontalAlignment="Left"/>
-        <!--<Label Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Potrosnja potrosaca:" />
-        <TextBlock Grid.Row="1" Grid.Column="3" Name="Potrosnja" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-        <Label Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Energija panela:" />
-        <TextBlock Grid.Row="2" Grid.Column="3" Name="Snaga" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-        <Label Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="122.4,33.8,0,34" Content="Cena uvoza:" />
-        <TextBlock Grid.Row="3" Grid.Column="3" Name="Cena" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-        <Label Grid.Row="4" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Visak energije:"/>
-        <TextBlock Grid.Row="4" Grid.Column="3" HorizontalAlignment="Left" Name="VisakEnergije" VerticalAlignment="Center"></TextBlock>-->
+
+        <ComboBox Name="IzborDatuma" Grid.Row="0" Grid.Column="3" ItemsSource="{Binding ListaDatuma, UpdateSourceTrigger=PropertyChanged}" Width="150" Height="30" SelectionChanged="ComboBox_SelectionChanged"/>
+        <charting:Chart Grid.Row="2" Grid.Column="2" Grid.RowSpan="3" Grid.ColumnSpan="3" Name="chart">
+            <charting:Chart.Series>
+                <charting:LineSeries Title="Potrosnja potrosaca" IndependentValueBinding="{Binding Key}" DependentValueBinding="{Binding Value}"/>
+                <charting:LineSeries Title="Snaga panela" IndependentValueBinding="{Binding Key}" DependentValueBinding="{Binding Value}"/>
+                <charting:LineSeries Title="Energija baterije" IndependentValueBinding="{Binding Key}" DependentValueBinding="{Binding Value}"/>
+                <charting:LineSeries Title="Snaga iz distribucije" IndependentValueBinding="{Binding Key}" DependentValueBinding="{Binding Value}"/>
+            </charting:Chart.Series>
+            
+        </charting:Chart>
+        <Label Grid.Row="1" Grid.Column="3" Content="Cena za izabrani datum: " HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="18"/>
+        <TextBlock Grid.Row="1" Grid.Column="4" FontSize="18" Text="{Binding Cena}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Grid>
 </Window>

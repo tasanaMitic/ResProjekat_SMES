@@ -41,7 +41,7 @@ namespace Baterija
                 rezimRada =  _proxy.PreuzmiRezimRada();
                 Console.WriteLine($"Rezim rada baterije je: {rezimRada}");
                 baterija.PromeniKapacitet(rezimRada);
-                _proxy.PosaljiInfoSHESu(baterija.Kapacitet, rezimRada, baterija.MaksimalnaSnaga);
+                _proxy.PosaljiInfoSHESu(baterija.Kapacitet / 60, rezimRada, baterija.MaksimalnaSnaga); // podeljeno sa 60 zbog minuta
 
                 Thread.Sleep(1000);
             }

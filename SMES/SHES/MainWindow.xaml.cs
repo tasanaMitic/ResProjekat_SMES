@@ -2,6 +2,8 @@
 using SHES.Serveri;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 using System.ServiceModel;
@@ -10,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.DataVisualization.Charting;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -19,17 +22,49 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml;
 
+
 namespace SHES
 {
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
         private static BackgroundWorker backgroundWorker = new BackgroundWorker(); //ovo ce trebati za tred koji unosi u xml
         public static Sat Sat = new Sat();
         public static SHESInfo Info = new SHESInfo();
+        private ObservableCollection<String> _listaDatuma = new ObservableCollection<string>();
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged(string parameter)
+        {
+
+            PropertyChangedEventHandler ph = PropertyChanged;
+            if (ph != null)
+            {
+                ph(this, new PropertyChangedEventArgs(parameter));
+            }
+
+        }
+
+        private Double _cena;
+
+        public Double Cena
+        {
+            get { return _cena; }
+            set { _cena = value;  OnPropertyChanged("Cena"); }
+        }
+
+
+        //public event NotifyCollectionChangedEventHandler CollectionChanged;
+
+        public ObservableCollection<String> ListaDatuma
+        {
+            get { return _listaDatuma; }
+            set { _listaDatuma = value; }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -44,6 +79,7 @@ namespace SHES
             elektrodistribucijaServer.Open();
             baterijaServer.Open();
             eVPunjacServer.Open();
+            DataContext = this;
 
             backgroundWorker.DoWork += backgroundWorker_DoWork;
             backgroundWorker.RunWorkerAsync();
@@ -54,6 +90,8 @@ namespace SHES
             //BindPropertyToUIElement(Info, Snaga, TextBlock.TextProperty, "SnagaPanela");
             //BindPropertyToUIElement(Info, Cena, TextBlock.TextProperty, "UvozElektrodistribucije");
             //BindPropertyToUIElement(Info, VisakEnergije, TextBlock.TextProperty, "VisakEnergije");
+
+            
             
             Sat.PokreniSat();
             
@@ -92,12 +130,25 @@ namespace SHES
 
                     if (Sat.Sati == 0 && Sat.Minuta == 0)
                     {
-                        XMLWorker.Instance().UnesiCenu(Info.UvozElektrodistribucije, new DateTime(Sat.Datum.Year, Sat.Datum.Month, Sat.Datum.Day).AddDays(-1));
+                        DateTime datum = new DateTime(Sat.Datum.Year, Sat.Datum.Month, Sat.Datum.Day).AddDays(-1);
+                        XMLWorker.Instance().UnesiCenu(Info.UvozElektrodistribucije, datum);
+                        Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority.Background, new Action(() =>
+                        ListaDatuma.Add($"{datum.Day}.{datum.Month}.{datum.Year}")));
+                        
                         Info.UvozElektrodistribucije = 0;
                     }
                 }
             }
         }
 
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            List<Dictionary<string, double>> unosiZaDatum = XMLWorker.Instance().PreuzmiInfoZaDatum(IzborDatuma.SelectedValue.ToString());
+            ((LineSeries)chart.Series[0]).ItemsSource = unosiZaDatum[0];
+            ((LineSeries)chart.Series[1]).ItemsSource = unosiZaDatum[1];
+            ((LineSeries)chart.Series[2]).ItemsSource = unosiZaDatum[2];
+            ((LineSeries)chart.Series[3]).ItemsSource = unosiZaDatum[3];
+            Cena = XMLWorker.Instance().PreuzmiCenuZaDatun(IzborDatuma.SelectedValue.ToString());
+        }
     }
 }

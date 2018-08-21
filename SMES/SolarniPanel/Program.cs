@@ -16,7 +16,7 @@ namespace SolarniPanel
         private static double tempSunca;
         static void Main(string[] args)
         {
-            Console.WriteLine("Unesite maksimalnu snagu solarnog panela u W: ");
+            Console.WriteLine("Unesite maksimalnu snagu solarnog panela u kW: ");
             double temp;
             while (!Double.TryParse(Console.ReadLine(), out temp)) ;
             panel.MaksimalnaSnaga = temp;

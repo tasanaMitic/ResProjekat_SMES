@@ -17,7 +17,7 @@ namespace Baterija
         {
             Ime = GetHashCode();
             
-            Kapacitet = 20;
+            Kapacitet = 10;
         }
 
         public void PromeniKapacitet(RezimRadaBaterije rezimRada)

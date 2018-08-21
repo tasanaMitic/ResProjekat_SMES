@@ -17,3 +17,4 @@ E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csproj.Cor
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csproj.CopyComplete
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.exe
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.pdb
+E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Potrosac\obj\Debug\Potrosac.csprojAssemblyReference.cache

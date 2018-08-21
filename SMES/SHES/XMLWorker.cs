@@ -126,6 +126,105 @@ namespace SHES
             xmlNodeDatum.AppendChild(unosCeneNode);
             xmlDocument.Save("database.xml");
         }
+
+        public Double PreuzmiCenuZaDatun(string datum)
+        {
+            Double retVal = 0;
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load("database.xml");
+            bool postojiDatum = false;
+            XmlNode xmlNodeDatum = null;
+            foreach (XmlNode xmlNode in xmlDocument.DocumentElement.ChildNodes)
+            {
+                if (xmlNode.Attributes["Datum"].Value.ToString() == datum)
+                {
+                    postojiDatum = true;
+                    xmlNodeDatum = xmlNode;
+                    break;
+                }
+            }
+
+            if (!postojiDatum)
+            {
+                return retVal;
+            }
+            else
+            {
+                try
+                {
+                    retVal = Double.Parse(xmlNodeDatum.LastChild.InnerText);
+                } 
+                catch (Exception)
+                {
+                    return retVal;
+                }
+            }
+
+            return retVal;
+        }
+
+        public List<Dictionary<String, double>> PreuzmiInfoZaDatum (string datum)
+        {
+            List<Dictionary<String, double>> retValue = new List<Dictionary<string, double>>(4);
+
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load("database.xml");
+            bool postojiDatum = false;
+            XmlNode xmlNodeDatum = null;
+            foreach (XmlNode xmlNode in xmlDocument.DocumentElement.ChildNodes)
+            {
+                if (xmlNode.Attributes["Datum"].Value.ToString() == datum)
+                {
+                    postojiDatum = true;
+                    xmlNodeDatum = xmlNode;
+                    break;
+                }
+            }
+
+            if (!postojiDatum)
+            {
+                retValue = null;
+            }
+            else
+            {
+                Dictionary<string, double> potrosnjaPotrosacaDic = new Dictionary<string, double>();
+                Dictionary<string, double> visakEnergijeDic = new Dictionary<string, double>();
+                Dictionary<string, double> snagaPanelaDic = new Dictionary<string, double>();
+                Dictionary<string, double> energijaBaterijeDic = new Dictionary<string, double>();
+
+                foreach (XmlNode unos in xmlNodeDatum.ChildNodes)
+                {
+                    if (unos.Name == "Cena")
+                    {
+                        break;
+                    }
+                    try
+                    {
+                        Double potrosnjaPotrosaca = Double.Parse(unos.ChildNodes[0].InnerText);
+                        Double visakEnergije = Double.Parse(unos.ChildNodes[1].InnerText);
+                        Double snagaPanela = Double.Parse(unos.ChildNodes[2].InnerText);
+                        Double energijaBaterije = Double.Parse(unos.ChildNodes[3].InnerText);
+                        String key = unos.Attributes["Vreme"].Value;
+                        potrosnjaPotrosacaDic[key] = potrosnjaPotrosaca;
+                        visakEnergijeDic[key] = visakEnergije;
+                        snagaPanelaDic[key] = snagaPanela;
+                        energijaBaterijeDic[key] = energijaBaterije;
+                    }
+                    catch (Exception)
+                    {
+                        return null;
+                    }
+                }
+
+                retValue.Add(potrosnjaPotrosacaDic);
+                retValue.Add(snagaPanelaDic);
+                retValue.Add(energijaBaterijeDic);
+                retValue.Add(visakEnergijeDic);
+            }
+
+            
+            return retValue;
+        }
     }
 }
 /*

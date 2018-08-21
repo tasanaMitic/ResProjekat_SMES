@@ -13,7 +13,6 @@ E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjac\bin\Debug\EVPunjac.exe
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjac\bin\Debug\EVPunjac.pdb
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjac\bin\Debug\Common.dll
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjac\bin\Debug\Common.pdb
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.csprojAssemblyReference.cache
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.csproj.CoreCompileInputs.cache
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.csproj.CopyComplete
 E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjac\obj\Debug\EVPunjac.exe

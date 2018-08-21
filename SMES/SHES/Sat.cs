@@ -31,7 +31,7 @@ namespace SHES
         public DateTime Datum
         {
             get { return _datum; }
-            set { _datum = value; OnPropertyChanged("Datum"); }
+            set { _datum = value; }
         }
 
 
