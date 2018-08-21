@@ -12,6 +12,7 @@ namespace SHES.Servisi
         public double DobaviVisak()
         {
             double visak = MainWindow.Info.VisakEnergije;
+            MainWindow.Info.SnagaIzElektrodistribucije -= visak;
             MainWindow.Info.VisakEnergije -= visak;
             return visak;
         }

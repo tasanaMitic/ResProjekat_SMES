@@ -15,8 +15,16 @@ namespace SHES
         private double _snagaPanela;
         private double _energijaBaterije;
         private double _maxSnagaBaterije;
+        private double _snagaIzElektrodistribucije;
 
 
+
+
+        public double SnagaIzElektrodistribucije
+        {
+            get { return _snagaIzElektrodistribucije; }
+            set { _snagaIzElektrodistribucije = value; OnPropertyChanged("SnagaIzElektrodistribucije"); }
+        }
         public double VisakEnergije
         {
             get { return _visakEnergije; }
