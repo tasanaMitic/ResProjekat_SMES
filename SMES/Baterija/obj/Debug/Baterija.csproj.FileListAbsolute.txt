@@ -8,13 +8,3 @@ C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\obj\Debug\B
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\bin\Debug\Common.dll
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\bin\Debug\Common.pdb
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.csproj.CopyComplete
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\bin\Debug\Baterija.exe.config
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\bin\Debug\Baterija.exe
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\bin\Debug\Baterija.pdb
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\bin\Debug\Common.dll
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\bin\Debug\Common.pdb
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.csprojAssemblyReference.cache
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.csproj.CoreCompileInputs.cache
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.csproj.CopyComplete
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.exe
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\Baterija\obj\Debug\Baterija.pdb

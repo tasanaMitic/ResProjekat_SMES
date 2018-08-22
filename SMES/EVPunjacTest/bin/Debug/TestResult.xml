@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjacTest\bin\Debug\EVPunjac.exe" total="0" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-08-22" time="18:24:08">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8935" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="E:\Fax\RES\Projekat\NUnit-2.6.4\bin" machine-name="DESKTOP-IOS3VE9" user="Slobodan" user-domain="DESKTOP-IOS3VE9" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\EVPunjacTest\bin\Debug\EVPunjac.exe" executed="True" result="Inconclusive" success="False" time="0.017" asserts="0" />
+</test-results>

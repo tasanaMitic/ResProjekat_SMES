@@ -8,13 +8,3 @@ C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Deb
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\Common.dll
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\Common.pdb
 C:\Users\Korisnik\Desktop\ProjekatRes\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.csproj.CopyComplete
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\SolarniPanel.exe.config
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\SolarniPanel.exe
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\SolarniPanel.pdb
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\Common.dll
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\bin\Debug\Common.pdb
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.csprojAssemblyReference.cache
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.csproj.CoreCompileInputs.cache
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.csproj.CopyComplete
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.exe
-E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\SolarniPanel\obj\Debug\SolarniPanel.pdb
