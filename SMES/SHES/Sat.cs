@@ -15,7 +15,7 @@ namespace SHES
         public int Sati
         {
             get { return _sati; }
-            private set { _sati = value; OnPropertyChanged("Sati"); }
+            set { _sati = value; OnPropertyChanged("Sati"); }
         }
 
         private int _minuta = 0;
@@ -23,7 +23,7 @@ namespace SHES
         public int Minuta
         {
             get { return _minuta; }
-            private set { _minuta = value; OnPropertyChanged("Minuta"); }
+            set { _minuta = value; OnPropertyChanged("Minuta"); }
         }
 
         private DateTime _datum = DateTime.Now;

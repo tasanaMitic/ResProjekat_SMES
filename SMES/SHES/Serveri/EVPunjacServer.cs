@@ -11,21 +11,21 @@ namespace SHES.Serveri
 {
     public class EVPunjacServer
     {
-        ServiceHost _serviceHost;
+        public ServiceHost serviceHost;
 
         public EVPunjacServer()
         {
-            _serviceHost = new ServiceHost(typeof(EVPunjacServis));
-            _serviceHost.AddServiceEndpoint(typeof(IEVPunjac), new NetTcpBinding(), new Uri("net.tcp://localhost:4004/IEVPunjac"));
+            serviceHost = new ServiceHost(typeof(EVPunjacServis));
+            serviceHost.AddServiceEndpoint(typeof(IEVPunjac), new NetTcpBinding(), new Uri("net.tcp://localhost:4004/IEVPunjac"));
         }
 
         public void Open()
         {
-            _serviceHost.Open();
+            serviceHost.Open();
         }
         public void Close()
         {
-            _serviceHost.Close();
+            serviceHost.Close();
         }
     }
 }

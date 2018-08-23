@@ -11,22 +11,22 @@ namespace SHES.Serveri
 {
     public class BaterijaServer
     {
-        ServiceHost _serviceHost;
+        public ServiceHost serviceHost;
 
         public BaterijaServer()
         {
-            _serviceHost = new ServiceHost(typeof(BaterijaServis));
-            _serviceHost.AddServiceEndpoint(typeof(IBaterija), new NetTcpBinding(), new Uri("net.tcp://localhost:4003/IBaterija"));
+            serviceHost = new ServiceHost(typeof(BaterijaServis));
+            serviceHost.AddServiceEndpoint(typeof(IBaterija), new NetTcpBinding(), new Uri("net.tcp://localhost:4003/IBaterija"));
         }
 
         public void Open()
         {
-            _serviceHost.Open();
+            serviceHost.Open();
         }
 
         public void Close()
         {
-            _serviceHost.Close();
+            serviceHost.Close();
         }
     }
 }

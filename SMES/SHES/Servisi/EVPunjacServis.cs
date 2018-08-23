@@ -21,7 +21,7 @@ namespace SHES.Servisi
             {
                 return RezimRadaBaterije.PUNJENJE;
             }
-            else if (MainWindow.Sat.Sati > 13 && MainWindow.Sat.Sati < 17)
+            else if (MainWindow.Sat.Sati >= 13 && MainWindow.Sat.Sati < 17)
             {
                 return RezimRadaBaterije.PRAZNJENJE;
             }

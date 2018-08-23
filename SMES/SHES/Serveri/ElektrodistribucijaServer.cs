@@ -11,22 +11,22 @@ namespace SHES.Serveri
 {
     public class ElektrodistribucijaServer
     {
-        ServiceHost _serviceHost;
+        public ServiceHost serviceHost;
 
         public ElektrodistribucijaServer()
         {
-            _serviceHost = new ServiceHost(typeof(ElektroDistribucijaServis));
-            _serviceHost.AddServiceEndpoint(typeof(IElektroDistribucija), new NetTcpBinding(), new Uri("net.tcp://localhost:4002/IElektroDistribucija"));
+            serviceHost = new ServiceHost(typeof(ElektroDistribucijaServis));
+            serviceHost.AddServiceEndpoint(typeof(IElektroDistribucija), new NetTcpBinding(), new Uri("net.tcp://localhost:4002/IElektroDistribucija"));
         }
 
         public void Open()
         {
-            _serviceHost.Open();
+            serviceHost.Open();
         }
 
         public void Close()
         {
-            _serviceHost.Close();
+            serviceHost.Close();
         }
     }
 }

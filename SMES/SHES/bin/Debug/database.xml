@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Unosi>
-  <DnevniUnos Datum="21.8.2018">
-    <Unos Vreme="0:1">
+  <DnevniUnos Datum="24.8.2018">
+    <Unos Vreme="1:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
       <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
       <SnagaPanela>0</SnagaPanela>
@@ -29,313 +29,331 @@
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
       <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
       <SnagaPanela>0</SnagaPanela>
-      <EnergijaBaterije>-7.5</EnergijaBaterije>
+      <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="5:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
+      <PotrosnjaPotrosaca>3.33333333333333</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>3.33333333333333</UvozIzElektrodistribucije>
       <SnagaPanela>0</SnagaPanela>
-      <EnergijaBaterije>-9</EnergijaBaterije>
+      <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="6:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>5.66666666666667</UvozIzElektrodistribucije>
       <SnagaPanela>0</SnagaPanela>
-      <EnergijaBaterije>-10.5</EnergijaBaterije>
+      <EnergijaBaterije>-2.5</EnergijaBaterije>
     </Unos>
     <Unos Vreme="7:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>5.5</UvozIzElektrodistribucije>
+      <SnagaPanela>0</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="8:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>4</UvozIzElektrodistribucije>
+      <SnagaPanela>0</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="9:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>4.66666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>0</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="10:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>19.6666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>0</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="11:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>34</UvozIzElektrodistribucije>
+      <SnagaPanela>0</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="12:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>39.6666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>0</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="13:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>34</UvozIzElektrodistribucije>
+      <SnagaPanela>0</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="14:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>34.6666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>0</SnagaPanela>
+      <EnergijaBaterije>5</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="15:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>27</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>5.83333333333333</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="16:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>31.0333333333333</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>5</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="17:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>26.6</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>5.83333333333333</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="18:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>11.0333333333333</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="19:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.6</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="20:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.86666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="21:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.6</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="22:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.86666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="23:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.6</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="0:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.86666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Cena>-5824.66666666666</Cena>
+  </DnevniUnos>
+  <DnevniUnos Datum="25.8.2018">
+    <Unos Vreme="1:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.86666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="2:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.2</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="3:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.86666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="4:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>6.6</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>-5</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="5:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>7.7</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>-5.83333333333333</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="6:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>7.7</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>-5.83333333333333</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="7:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.6</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="8:0">
+      <PotrosnjaPotrosaca>4</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.86666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="9:0">
+      <PotrosnjaPotrosaca>4.66666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>1.6</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
+      <EnergijaBaterije>0</EnergijaBaterije>
+    </Unos>
+    <Unos Vreme="10:0">
+      <PotrosnjaPotrosaca>0.666666666666667</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>-1.46666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="11:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <UvozIzElektrodistribucije>-2.4</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="12:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <UvozIzElektrodistribucije>-2.8</UvozIzElektrodistribucije>
+      <SnagaPanela>2.8</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="13:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <UvozIzElektrodistribucije>-2.4</UvozIzElektrodistribucije>
+      <SnagaPanela>2.4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="14:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
+      <UvozIzElektrodistribucije>-9.66666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
+      <EnergijaBaterije>5.83333333333333</EnergijaBaterije>
     </Unos>
     <Unos Vreme="15:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>9</EnergijaBaterije>
+      <UvozIzElektrodistribucije>-9</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
+      <EnergijaBaterije>5</EnergijaBaterije>
     </Unos>
     <Unos Vreme="16:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>10.5</EnergijaBaterije>
+      <UvozIzElektrodistribucije>-10.5</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
+      <EnergijaBaterije>5.83333333333333</EnergijaBaterije>
     </Unos>
     <Unos Vreme="17:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>9</EnergijaBaterije>
+      <UvozIzElektrodistribucije>-9</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
+      <EnergijaBaterije>5</EnergijaBaterije>
     </Unos>
     <Unos Vreme="18:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <UvozIzElektrodistribucije>-5.5</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="19:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <UvozIzElektrodistribucije>-4</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="20:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <UvozIzElektrodistribucije>-4.66666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="21:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <UvozIzElektrodistribucije>-4</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="22:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <UvozIzElektrodistribucije>-4.66666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="23:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <UvozIzElektrodistribucije>-4</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="0:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <UvozIzElektrodistribucije>-4.66666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
-    <Cena>0</Cena>
+    <Cena>934.666666666667</Cena>
   </DnevniUnos>
-  <DnevniUnos Datum="22.8.2018">
+  <DnevniUnos Datum="26.8.2018">
     <Unos Vreme="1:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <UvozIzElektrodistribucije>-4.66666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="2:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <UvozIzElektrodistribucije>-4</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="3:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>0</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <UvozIzElektrodistribucije>-4.66666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="4:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-136.5</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>-9</EnergijaBaterije>
+      <UvozIzElektrodistribucije>0.166666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
+      <EnergijaBaterije>-5</EnergijaBaterije>
     </Unos>
     <Unos Vreme="5:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>3.5</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>-10.5</EnergijaBaterije>
+      <UvozIzElektrodistribucije>1.16666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
+      <EnergijaBaterije>-5.83333333333333</EnergijaBaterije>
     </Unos>
     <Unos Vreme="6:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>3</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>-9</EnergijaBaterije>
+      <UvozIzElektrodistribucije>1</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
+      <EnergijaBaterije>-5</EnergijaBaterije>
     </Unos>
     <Unos Vreme="7:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <UvozIzElektrodistribucije>-3.83333333333333</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="8:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-6</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
+      <UvozIzElektrodistribucije>-4</UvozIzElektrodistribucije>
+      <SnagaPanela>4.66666666666667</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
     </Unos>
     <Unos Vreme="9:0">
       <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
+      <UvozIzElektrodistribucije>-4.66666666666667</UvozIzElektrodistribucije>
+      <SnagaPanela>4</SnagaPanela>
       <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="10:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-6</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="11:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="12:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-6</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="13:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="14:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="15:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-15</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>9</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="16:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-17.5</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>10.5</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="17:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-15</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>9</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="18:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="19:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-6</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="20:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="21:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-6</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="22:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="23:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-6</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="0:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Cena>13825</Cena>
-  </DnevniUnos>
-  <DnevniUnos Datum="23.8.2018">
-    <Unos Vreme="1:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-6</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="2:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="3:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>-7</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>0</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="4:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>3</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>-9</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="5:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>3.5</UvozIzElektrodistribucije>
-      <SnagaPanela>6</SnagaPanela>
-      <EnergijaBaterije>-10.5</EnergijaBaterije>
-    </Unos>
-    <Unos Vreme="6:0">
-      <PotrosnjaPotrosaca>0</PotrosnjaPotrosaca>
-      <UvozIzElektrodistribucije>3</UvozIzElektrodistribucije>
-      <SnagaPanela>7</SnagaPanela>
-      <EnergijaBaterije>-9</EnergijaBaterije>
     </Unos>
   </DnevniUnos>
 </Unosi>

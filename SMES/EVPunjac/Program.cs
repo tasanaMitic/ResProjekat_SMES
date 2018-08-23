@@ -66,7 +66,7 @@ namespace EVPunjac
                     if (evpunjac.NaPunjacu.Equals(true) && evpunjac.Napunjen < 100)
                     {
                         _proxy.PreuzmiEnergiju();
-                        evpunjac.Napunjen += 1; //odrediti koliki procenat iznosi energija kojom se automobil puni
+                        evpunjac.Napunjen += 1;
                     }
                 }
                 else if (key1 == "N")
@@ -76,7 +76,7 @@ namespace EVPunjac
                     if(evpunjac.NaPunjacu.Equals(true) && rezimRadaBaterije.Equals(RezimRadaBaterije.PUNJENJE) && evpunjac.Napunjen < 100)
                     {
                         _proxy.PreuzmiEnergiju();
-                        evpunjac.Napunjen += 1; //odrediti koliki procenat iznosi energija kojom se automobil puni
+                        evpunjac.Napunjen += 1; 
                     }
                 }
 

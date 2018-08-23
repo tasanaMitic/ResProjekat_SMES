@@ -11,21 +11,21 @@ namespace SHES.Serveri
 {
     public class PanelServer
     {
-        ServiceHost _serviceHost;
+        public ServiceHost serviceHost;
 
         public PanelServer()
         {
-            _serviceHost = new ServiceHost(typeof(PanelServis));
-            _serviceHost.AddServiceEndpoint(typeof(IPanel), new NetTcpBinding(), new Uri("net.tcp://localhost:4001/IPanel"));
+            serviceHost = new ServiceHost(typeof(PanelServis));
+            serviceHost.AddServiceEndpoint(typeof(IPanel), new NetTcpBinding(), new Uri("net.tcp://localhost:4001/IPanel"));
         }
 
         public void Open()
         {
-            _serviceHost.Open();
+            serviceHost.Open();
         }
         public void Close()
         {
-            _serviceHost.Close();
+            serviceHost.Close();
         }
     }
 }

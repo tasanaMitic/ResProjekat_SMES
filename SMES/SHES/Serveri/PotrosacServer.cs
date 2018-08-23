@@ -11,22 +11,23 @@ namespace SHES.Serveri
 {
     public class PotrosacServer
     {
-        ServiceHost _serviceHost;
+        public ServiceHost serviceHost;
 
         public PotrosacServer()
         {
-            _serviceHost = new ServiceHost(typeof(PotrosacServis));
-            _serviceHost.AddServiceEndpoint(typeof(IPotrosac), new NetTcpBinding(), new Uri("net.tcp://localhost:4000/IPotrosac"));
+            serviceHost = new ServiceHost(typeof(PotrosacServis));
+            serviceHost.AddServiceEndpoint(typeof(IPotrosac), new NetTcpBinding(), new Uri("net.tcp://localhost:4000/IPotrosac"));
         }
 
         public void Open()
         {
-            _serviceHost.Open();
+            serviceHost.Open();
+            
         }
 
         public void Close()
         {
-            _serviceHost.Close();
+            serviceHost.Close();
         }
     }
 }
