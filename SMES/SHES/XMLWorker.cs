@@ -5,17 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Configuration;
 
 namespace SHES
 {
     public class XMLWorker
     {
-       
+        static String putanja = @"E:\Fax\RES\Projekat\ResProjekat_SMES\SMES\database.xml";
         private XMLWorker()
         {
-            if (!File.Exists("database.xml"))
+            if (!File.Exists(putanja))
             {
-                using (XmlWriter xmlWriter = XmlWriter.Create("database.xml"))
+                using (XmlWriter xmlWriter = XmlWriter.Create(putanja))
                 {
                     xmlWriter.WriteStartDocument();
                     xmlWriter.WriteStartElement("Unosi");
@@ -25,8 +26,8 @@ namespace SHES
             } 
             else
             {
-                File.Delete("database.xml");
-                using (XmlWriter xmlWriter = XmlWriter.Create("database.xml"))
+                File.Delete(putanja);
+                using (XmlWriter xmlWriter = XmlWriter.Create(putanja))
                 {
                     xmlWriter.WriteStartDocument();
                     xmlWriter.WriteStartElement("Unosi");
@@ -40,7 +41,7 @@ namespace SHES
 
         public static XMLWorker Instance ()
         {
-            if (_instance == null)
+            if (_instance == null || !File.Exists(putanja))
             {
                 _instance = new XMLWorker();
             }
@@ -51,7 +52,7 @@ namespace SHES
         public void UnesiUXML (double potrosnjaPotrosaca, double uvozIzElektrodistribucije, double snagaPanela, double energijaBaterije, DateTime vremeUnosa)
         {
             XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load("database.xml");
+            xmlDocument.Load(putanja);
             bool postojiDatum = false;
             XmlNode xmlNodeDatum = null;
             String datum = $"{vremeUnosa.Day.ToString()}.{vremeUnosa.Month.ToString()}.{vremeUnosa.Year.ToString()}";
@@ -93,7 +94,7 @@ namespace SHES
             unos.AppendChild(energijaBaterijeNode);
 
             xmlNodeDatum.AppendChild(unos);
-            xmlDocument.Save("database.xml");
+            xmlDocument.Save(putanja);
         }
         public void UnesiCenu (double cena, DateTime datumUnosa)
         {
@@ -101,7 +102,7 @@ namespace SHES
             XmlNode xmlNodeDatum = null;
             bool postojiDatum = false;
             XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load("database.xml");
+            xmlDocument.Load(putanja);
             foreach (XmlNode xmlNode in xmlDocument.DocumentElement.ChildNodes)
             {
                 if (xmlNode.Attributes["Datum"].Value.ToString() == datum)
@@ -124,14 +125,14 @@ namespace SHES
             XmlNode unosCeneNode = xmlDocument.CreateElement("Cena");
             unosCeneNode.InnerText = cena.ToString();
             xmlNodeDatum.AppendChild(unosCeneNode);
-            xmlDocument.Save("database.xml");
+            xmlDocument.Save(putanja);
         }
 
         public Double PreuzmiCenuZaDatun(string datum)
         {
             Double retVal = 0;
             XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load("database.xml");
+            xmlDocument.Load(putanja);
             bool postojiDatum = false;
             XmlNode xmlNodeDatum = null;
             foreach (XmlNode xmlNode in xmlDocument.DocumentElement.ChildNodes)
@@ -168,7 +169,7 @@ namespace SHES
             List<Dictionary<String, double>> retValue = new List<Dictionary<string, double>>(4);
 
             XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load("database.xml");
+            xmlDocument.Load(putanja);
             bool postojiDatum = false;
             XmlNode xmlNodeDatum = null;
             foreach (XmlNode xmlNode in xmlDocument.DocumentElement.ChildNodes)

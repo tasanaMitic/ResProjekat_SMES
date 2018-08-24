@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Unosi>
+  <DnevniUnos Datum="2.2.2017">
+    <Unos Vreme="3:40">
+      <PotrosnjaPotrosaca>20</PotrosnjaPotrosaca>
+      <UvozIzElektrodistribucije>20</UvozIzElektrodistribucije>
+      <SnagaPanela>40</SnagaPanela>
+      <EnergijaBaterije>10</EnergijaBaterije>
+    </Unos>
+  </DnevniUnos>
+</Unosi>
